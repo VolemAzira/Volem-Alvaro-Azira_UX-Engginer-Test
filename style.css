@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  background-color: #0072ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+main span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main span .sectionOne {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main span .sectionOne .boxThree {
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #f474ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+main span .sectionOne .boxFour {
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #ff8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+main span .sectionThree {
+  display: flex;
+  gap: 0.5rem;
+}
+
+main span .sectionThree .boxOne {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #dbfb15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+main span .sectionThree .boxTwo {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #2bf2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+main .item2 {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+footer .paragraph {
+  text-align: justify;
+  display: none;
+}
+
+footer .toggle {
+  cursor: pointer;
+  border: none;
+  background-color: #d9d9d9;
+  font-weight: 600;
+}
+
+footer a i {
+  background-color: white;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: black 0 0 3px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: start;
+  }
+
+  main span {
+    flex-direction: column-reverse;
+  }
+
+  main span .sectionOne {
+    flex-direction: column-reverse;
+  }
+
+  main span .item1 {
+    display: none;
+  }
+
+  main .item2 {
+    display: flex;
+  }
+}
